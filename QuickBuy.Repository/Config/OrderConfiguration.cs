@@ -25,25 +25,28 @@ namespace QuickBuy.Repository.Config
              .IsRequired();
 
             builder
-            .Property(o => o.City)
+             .Property(o => o.City)
             .IsRequired()
             .HasMaxLength(100);
 
             builder
-            .Property(o => o.State)
-            .IsRequired()
-            .HasMaxLength(100);
+                .Property(o => o.State)
+                .IsRequired()
+                .HasMaxLength(100);
 
              builder
-            .Property(o => o.FullAdress)
-            .IsRequired()
-            .HasMaxLength(100);
+                .Property(o => o.FullAdress)
+                .IsRequired()
+                .HasMaxLength(100);
 
 
             builder
-             .Property(o => o.CEP)
-             .IsRequired()
-             .HasMaxLength(10);
+                .Property(o => o.CEP)
+                .IsRequired()
+                .HasMaxLength(10);
+
+            builder
+              .HasOne(o => o.User);
 
 
         }

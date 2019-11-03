@@ -14,9 +14,9 @@ namespace QuickBuy.Domain.Entities
         public DateTime ExpectedDeliveryDate { get; set; }
         public DateTime DeliveryDate { get; set; }
 
-        public ICollection<ItemOrder> ItensOrders { get; set; }
+        public virtual ICollection<ItemOrder> ItensOrders { get; set; }
         public int FormPaymentId { get; set; }
-        public FormPayment FormPayment { get; set; }
+        public virtual FormPayment FormPayment { get; set; }
         public string CEP { get; set; }
         public string State { get; set; }
         public string City { get; set; }

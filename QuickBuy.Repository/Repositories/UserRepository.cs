@@ -3,7 +3,7 @@ using QuickBuy.Domain.Contracts;
 
 namespace QuickBuy.Repository.Repositories
 {
-    public class UserRepository : BaseRepository<UserÇonfiguration>, IUserRepository
+    public class UserRepository : BaseRepository<User>, IUserRepository
     {
         public UserRepository()
         {

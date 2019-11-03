@@ -4,9 +4,9 @@ using QuickBuy.Domain.Entities;
 
 namespace QuickBuy.Repository.Config
 {
-    public class UserConfiguration : IEntityTypeConfiguration<UserÇonfiguration>
+    public class UserConfiguration : IEntityTypeConfiguration<User>
     {
-        public void Configure (EntityTypeBuilder<UserÇonfiguration> builder)
+        public void Configure (EntityTypeBuilder<User> builder)
         {
             builder.HasKey(u => u.Id);
 
@@ -24,18 +24,23 @@ namespace QuickBuy.Repository.Config
             builder
                 .Property(u => u.Name)
                 .IsRequired()
-                .HasMaxLength(50)
-                .HasColumnType("nvarchar");
+                .HasMaxLength(50);
+            //.HasColumnType("nvarchar");
 
             builder
                .Property(u => u.Password)
                .IsRequired()
                .HasMaxLength(400);
 
-           /* builder
-             .Property(u => u.Orders)
-             .IsRequired()
-             .HasMaxLength(50); */
+            builder
+               .HasMany(u => u.Orders)
+               .WithOne(p => p.User);
+
+
+            /* builder
+              .Property(u => u.Orders)
+              .IsRequired()
+              .HasMaxLength(50); */
 
         }
     }
