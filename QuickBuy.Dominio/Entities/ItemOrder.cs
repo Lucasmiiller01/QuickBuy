@@ -1,6 +1,6 @@
 ﻿namespace QuickBuy.Domain.Entities
 {
-    class ItemOrder : Entity
+    public class ItemOrder : Entity
     {
         public int Id { get; set; }
         public int Amount { get; set; }
@@ -10,9 +10,14 @@
         {
             ClearMessagesValidation();
 
-            if (Amount < 1)
+            if (Amount == 0)
             {
-                AddMessage("A quatidade precisa ser mais que 0.");
+                AddMessage("Quantidade não informada.");
+            }
+
+            if (ProductId == 0)
+            {
+                AddMessage("Sem referência de produto.");
             }
 
         }

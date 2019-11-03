@@ -1,6 +1,6 @@
 ﻿namespace QuickBuy.Domain.Entities
 {
-    class Product : Entity
+    public class Product : Entity
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -8,7 +8,13 @@
 
         public override void Validate()
         {
-            throw new System.NotImplementedException();
+            ClearMessagesValidation();
+
+            if (string.IsNullOrEmpty(Name))
+            {
+                AddMessage("Nome de produto precisa ser informado.");
+            }
+
         }
     }
 }

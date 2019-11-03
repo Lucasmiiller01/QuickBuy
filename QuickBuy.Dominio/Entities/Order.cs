@@ -5,7 +5,7 @@ using QuickBuy.Domain.ObjectValue;
 
 namespace QuickBuy.Domain.Entities
 {
-    class Order : Entity
+    public class Order : Entity
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }

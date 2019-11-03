@@ -2,7 +2,7 @@
 
 namespace QuickBuy.Domain.Entities
 {
-    class User : Entity
+    public class User : Entity
     {
         public int Id { get; set; }
         public string Email { get; set; }
@@ -13,7 +13,18 @@ namespace QuickBuy.Domain.Entities
 
         public override void Validate()
         {
-            throw new System.NotImplementedException();
+            ClearMessagesValidation();
+
+            if (string.IsNullOrEmpty(Email))
+            {
+                AddMessage("Email do usuário precisa ser informado.");
+            }
+
+            if (string.IsNullOrEmpty(Name))
+            {
+                AddMessage("Nome do usuário precisa ser informado.");
+            }
+
         }
     }
 }
