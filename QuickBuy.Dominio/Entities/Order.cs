@@ -10,7 +10,10 @@ namespace QuickBuy.Domain.Entities
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public int UserId { get; set; }
+        public virtual User User { get; set; }
         public DateTime ExpectedDeliveryDate { get; set; }
+        public DateTime DeliveryDate { get; set; }
+
         public ICollection<ItemOrder> ItensOrders { get; set; }
         public int FormPaymentId { get; set; }
         public FormPayment FormPayment { get; set; }

@@ -2,7 +2,7 @@
 
 namespace QuickBuy.Domain.Contracts
 {
-    public interface IUserRepository : IBaseRepository<User>
+    public interface IUserRepository : IBaseRepository<UserÇonfiguration>
     {
         
 
