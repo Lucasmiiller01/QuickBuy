@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "QuickBuy.Web": {
+    "QuickBuy.Web4": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -52,18 +52,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "QuickBuy.Web:build"
+            "browserTarget": "QuickBuy.Web4:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "QuickBuy.Web:build:production"
+              "browserTarget": "QuickBuy.Web4:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "QuickBuy.Web:build"
+            "browserTarget": "QuickBuy.Web4:build"
           }
         },
         "test": {
@@ -122,7 +122,7 @@
         }
       }
     },
-    "QuickBuy.Web-e2e": {
+    "QuickBuy.Web4-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -130,7 +130,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "QuickBuy.Web:serve"
+            "devServerTarget": "QuickBuy.Web4:serve"
           }
         },
         "lint": {
@@ -145,5 +145,5 @@
       }
     }
   },
-  "defaultProject": "QuickBuy.Web"
+  "defaultProject": "QuickBuy.Web4"
 }

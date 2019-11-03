@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace QuickBuy.Web.Controllers
+namespace QuickBuy.Web4.Controllers
 {
     [Route("api/[controller]")]
     public class SampleDataController : Controller

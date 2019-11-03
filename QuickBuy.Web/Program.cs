@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace QuickBuy.Web
+namespace QuickBuy.Web4
 {
     public class Program
     {

@@ -1,11 +1,11 @@
 {
-  "name": "QuickBuy.Web",
+  "name": "QuickBuy.Web4",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ssr": "ng run QuickBuy.Web:server:dev",
+    "build:ssr": "ng run QuickBuy.Web4:server:dev",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
