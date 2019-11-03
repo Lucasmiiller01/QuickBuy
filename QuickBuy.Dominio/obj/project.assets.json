@@ -692,9 +692,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucas\\source\\repos\\Quickbuy\\QuickBuy.Dominio\\QuickBuy.Dominio.csproj",
-      "projectName": "QuickBuy.Dominio",
-      "projectPath": "C:\\Users\\Lucas\\source\\repos\\Quickbuy\\QuickBuy.Dominio\\QuickBuy.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas\\source\\repos\\Quickbuy\\QuickBuy.Dominio\\QuickBuy.Domain.csproj",
+      "projectName": "QuickBuy.Domain",
+      "projectPath": "C:\\Users\\Lucas\\source\\repos\\Quickbuy\\QuickBuy.Dominio\\QuickBuy.Domain.csproj",
       "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Lucas\\source\\repos\\Quickbuy\\QuickBuy.Dominio\\obj\\",
       "projectStyle": "PackageReference",
